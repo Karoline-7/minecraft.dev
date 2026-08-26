@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER barra de navegación usando Flexbox -->
+<header>
+  <div class="logo">MINECRAFT.GUIA</div>
+  <nav>
+    <a href="#datos" class="nav-item">
+      <img src="imagenes/Datos.svg" class="icon" alt="Datos">
+      Datos
+    </a>
+    <a href="#dimensiones" class="nav-item">
+      <img src="imagenes/Dimensiones.svg" class="icon" alt="Dimensiones">
+      Dimensiones
+    </a>
+    <a href="#biomas" class="nav-item">
+      <img src="imagenes/Biomas.svg" class="icon" alt="Biomas">
+      Biomas
+    </a>
+    <a href="#bloques" class="nav-item">
+      <img src="imagenes/Bloques.svg" class="icon" alt="Bloques">
+      Bloques
+    </a>
+    <a href="#mobs" class="nav-item">
+      <img src="imagenes/Mobs.svg" class="icon" alt="Mobs">
+      Mobs
+    </a>
+    <a href="#crafteo" class="nav-item">
+      <img src="imagenes/Crafteo.svg" class="icon" alt="Crafteo">
+      Crafteo
+    </a>
+    <a href="#capas" class="nav-item">
+      <img src="imagenes/End.svg" class="icon" alt="El End">
+      El End
+    </a>
+  </nav>
+</header>
+
+<!-- HERO Grid y una escena hecha con CSS -->
+<div class="hero">
+  <div class="scene">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="mountains"></div>
+    <div class="ground"></div>
+  </div>
+  <div class="hero-copy">
+    <span class="css-tag">display: grid</span>
+    <h1>Minecraft: un mundo hecho de <span>bloques</span></h1>
+    <p>Sandbox de construcción y supervivencia donde cada elemento del entorno es un cubo que puedes romper, combinar y colocar. Esta guía resume sus piezas clave.</p>
+  </div>
+  <div class="end-crystal" role="img" aria-label="Cristal del End, referencia a la dimensión final del juego">🔮</div>
+</div>
+
+<!-- INICIO -->
+<section id="inicio">
+    <div class="section-head">
+        <span class="css-tag">inicio</span>
+        <h2 class="section-title">¿Qué es Minecraft?</h2>
+        <p class="section-intro">
+            Minecraft es un videojuego de construcción, exploración y supervivencia
+            en un mundo formado completamente por bloques.
+        </p>
+    </div>
+
+    <div class="intro-card mc-card">
+        <div class="block-icon">⛏️</div>
+
+        <div>
+            <h3>Un mundo para explorar y crear</h3>
+            <p>
+                En Minecraft puedes explorar diferentes lugares, recolectar recursos,
+                construir casas y estructuras, fabricar herramientas y enfrentarte
+                a diferentes criaturas.
+            </p>
+
+            <p>
+                El juego no te obliga a seguir un único camino. Puedes dedicarte a
+                construir, explorar, luchar, conseguir recursos o simplemente crear
+                tu propio mundo.
+            </p>
+
+            <p>
+                Esta guía está pensada para quienes están comenzando y quieren
+                conocer los elementos principales del juego, como sus dimensiones,
+                biomas, bloques, criaturas y formas de crear objetos.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- COMO SE JUEGA -->
+<section id="como-se-juega">
+  <div class="section-head">
+    <span class="css-tag">display: grid</span>
+    <h2 class="section-title">🎮 ¿Cómo se juega?</h2>
+    <p class="section-intro">
+      Minecraft te permite explorar, construir, conseguir recursos y sobrevivir
+      en un mundo lleno de posibilidades.
+    </p>
+  </div>
+
+  <div class="game-grid">
+
+    <div class="mc-card game-card">
+      <div class="block-icon">🎮</div>
+      <h3>Los modos de juego</h3>
+      <p>
+        Minecraft tiene diferentes modos. En <strong>Supervivencia</strong>
+        debes conseguir recursos, construir y protegerte. En
+        <strong>Creativo</strong> tienes recursos ilimitados para construir
+        libremente.
+      </p>
+    </div>
+
+    <div class="mc-card game-card">
+      <div class="block-icon">❤️</div>
+      <h3>Vida, hambre y experiencia</h3>
+      <p>
+        En Supervivencia debes cuidar tu <strong>vida</strong> y mantener tu
+        <strong>hambre</strong>. También puedes conseguir experiencia realizando
+        diferentes actividades, que sirve para encantar y mejorar objetos.
+      </p>
+    </div>
+
+    <div class="mc-card game-card">
+      <div class="block-icon">🌞</div>
+      <h3>Día y noche</h3>
+      <p>
+        El mundo cambia entre el día y la noche. Durante la noche aparecen
+        criaturas hostiles, por lo que es importante tener un refugio y
+        suficiente iluminación para protegerte.
+      </p>
+    </div>
+
+    <div class="mc-card game-card">
+      <div class="block-icon">🎒</div>
+      <h3>Inventario</h3>
+      <p>
+        El inventario es donde guardas tus objetos. Puedes almacenar bloques,
+        herramientas, alimentos, minerales y otros recursos que encuentres
+        durante tu aventura.
+      </p>
+    </div>
+
+    <div class="mc-card game-card">
+      <div class="block-icon">⛏️</div>
+      <h3>¿Qué hago cuando comienzo?</h3>
+      <p>
+        Lo primero es conseguir <strong>madera</strong>, crear herramientas
+        básicas y conseguir comida. Después puedes construir un refugio,
+        conseguir mejores recursos y comenzar a explorar el mundo.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MOBS están hechos con una Grid de 8x8 -->
+<section id="iconos">
+  <div class="section-head">
+    <span class="css-tag">display: grid (pixel art)</span>
+    <h2 class="section-title">Mobs icónicos</h2>
+    <p class="section-intro">Cada rostro está armado con una grid 8×8 de bloques CSS.</p>
+  </div>
+  <div class="icons-row">
+    <div class="icon-block">
+      <div class="pixel-art mc-panel" role="img" aria-label="Rostro de Creeper hecho con CSS Grid">
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-b"></div><div class="px-creeper-b"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+        <div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div><div class="px-creeper-a"></div>
+      </div>
+      <h3>Creeper</h3>
+      <p>Explota al acercarse; el mob más temido del Overworld.</p>
+    </div>
+
+    <div class="icon-block">
+      <div class="pixel-art mc-panel" role="img" aria-label="Rostro de Enderman hecho con CSS Grid">
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-b"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-b"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-b"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-b"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+        <div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div><div class="px-ender-a"></div>
+      </div>
+      <h3>Enderman</h3>
+      <p>Ojos morados brillantes; se enoja si lo miras directamente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- cuatro columnas con información -->
+<section id="datos">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns / gap</span>
+    <h2 class="section-title">Datos rápidos</h2>
+    <p class="section-intro">Cifras clave del juego.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat"><div class="num">3</div><div class="label">Dimensiones: Overworld, Nether, End</div></div>
+    <div class="stat"><div class="num">60+</div><div class="label">Biomas distintos</div></div>
+    <div class="stat"><div class="num">320</div><div class="label">Altura del mundo (bloques)</div></div>
+    <div class="stat"><div class="num">80+</div><div class="label">Mobs registrados</div></div>
+  </div>
+</section>
+
+<!-- DIMENSIONES tres tarjetas colocadas con Flexbox -->
+<section id="dimensiones">
+  <div class="section-head">
+    <span class="css-tag">display: flex</span>
+    <h2 class="section-title">Las 3 dimensiones</h2>
+    <p class="section-intro">Cada una con su propia física, mobs y recursos.</p>
+  </div>
+  <div class="dims-row">
+    <div class="mc-card dim-card"><div class="block-icon">🌍</div><h3>Overworld</h3><p>El mundo principal: bosques, montañas, océanos y aldeas. Punto de partida de toda partida.</p></div>
+    <div class="mc-card dim-card nether"><div class="block-icon">🔥</div><h3>Nether</h3><p>Dimensión infernal de lava y netherrack; se accede con un portal de obsidiana. Hogar de blazes y piglins.</p></div>
+    <div class="mc-card dim-card end"><div class="block-icon">🟪</div><h3>The End</h3><p>Islas flotantes de piedra del End; aquí vive el Ender Dragon, el jefe final del juego.</p></div>
+  </div>
+</section>
+
+<!-- BIOMAS OVERWORLD tarjetas organizadas con Grid -->
+<section id="biomas">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns: repeat(auto-fit, ...)</span>
+    <h2 class="section-title">Biomas del Overworld</h2>
+    <p class="section-intro">El paisaje cambia por completo según la zona.</p>
+  </div>
+  <div class="biomes-grid">
+    <div class="mc-card biome-card"><div class="block-icon">🌾</div><h3>Llanura</h3><p>Pasto abierto, ideal para construir.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🏜️</div><h3>Desierto</h3><p>Arena, cactus y templos ocultos.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">❄️</div><h3>Tundra nevada</h3><p>Nieve, hielo y aldeanos abrigados.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🌊</div><h3>Océano</h3><p>Corales, naufragios y templos submarinos.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🌴</div><h3>Selva</h3><p>Árboles enormes, lianas y templos escondidos.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🌳</div><h3>Sabana</h3><p>Pasto seco, acacias y aldeas propias.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🐸</div><h3>Pantano</h3><p>Agua turbia, árboles de sauce y cabañas de brujas.</p></div>
+  </div>
+</section>
+
+<!-- BIOMAS NETHER tarjetas organizadas con Grid -->
+<section id="biomas-nether">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns: repeat(auto-fit, ...)</span>
+    <h2 class="section-title">Biomas del Nether</h2>
+    <p class="section-intro">Paisajes infernales, cada uno con su propio peligro.</p>
+  </div>
+  <div class="biomes-grid">
+    <div class="mc-card biome-card"><div class="block-icon">🟥</div><h3>Tierras del Nether</h3><p>Netherrack rojizo, lava y ghasts flotando.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🍄</div><h3>Bosque carmesí</h3><p>Hongos gigantes rojos; hogar de piglins.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🟦</div><h3>Bosque distorsionado</h3><p>Vegetación azul-cian; libre de piglins hostiles.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">⬛</div><h3>Deltas de basalto</h3><p>Columnas de basalto entre géiseres de lava.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">💀</div><h3>Valle de arena de almas</h3><p>Arena de almas gris; aparecen esqueletos y skeletons ardientes.</p></div>
+  </div>
+</section>
+
+<!-- THE END tarjetas organizadas con Grid -->
+<section id="biomas-end">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns: repeat(auto-fit, ...)</span>
+    <h2 class="section-title">Zonas de The End</h2>
+    <p class="section-intro">Regiones de la dimensión final, más allá de la isla central.</p>
+  </div>
+  <div class="biomes-grid">
+    <div class="mc-card biome-card"><div class="block-icon">🐉</div><h3>Isla central</h3><p>Aquí aparece el Ender Dragon sobre pilares de cristal.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🏝️</div><h3>Islas exteriores</h3><p>Fragmentos pequeños de piedra del End flotando en el vacío.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">⛰️</div><h3>Tierras altas del End</h3><p>Terreno elevado con chorus y ciudades del End.</p></div>
+    <div class="mc-card biome-card"><div class="block-icon">🟪</div><h3>Páramos del End</h3><p>Zona plana y vacía, casi sin vegetación.</p></div>
+  </div>
+</section>
+
+<!-- BLOQUES tarjetas organizadas con Grid -->
+<section id="bloques">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns / gap</span>
+    <h2 class="section-title">Bloques esenciales</h2>
+    <p class="section-intro">Los materiales que más se recolectan durante una partida.</p>
+  </div>
+  <div class="blocks-grid">
+    <div class="mc-card"><div class="block-icon">🌱</div><h3>Pasto</h3><p>Bloque de superficie; debajo siempre hay tierra.</p>
+      <div class="tag-row"><span class="mini-tag">Cualquier herramienta</span><span class="mini-tag">Overworld</span></div></div>
+    <div class="mc-card"><div class="block-icon">🪨</div><h3>Piedra</h3><p>El bloque más común bajo tierra; base para herramientas.</p>
+      <div class="tag-row"><span class="mini-tag">Pico de madera+</span><span class="mini-tag">Subsuelo</span></div></div>
+    <div class="mc-card"><div class="block-icon">🪵</div><h3>Madera</h3><p>Se obtiene de árboles; primer recurso de cualquier partida.</p>
+      <div class="tag-row"><span class="mini-tag">Sin herramienta</span><span class="mini-tag">Bosques</span></div></div>
+    <div class="mc-card"><div class="block-icon">💎</div><h3>Diamante</h3><p>Mineral raro y profundo; da las mejores herramientas.</p>
+      <div class="tag-row"><span class="mini-tag">Pico de hierro+</span><span class="mini-tag">Y -58 aprox.</span></div></div>
+    <div class="mc-card"><div class="block-icon">🧱</div><h3>Obsidiana</h3><p>Se forma al mezclar agua y lava; es la puerta al Nether.</p>
+      <div class="tag-row"><span class="mini-tag">Pico de diamante</span><span class="mini-tag">Portal</span></div></div>
+    <div class="mc-card"><div class="block-icon">🟪</div><h3>Piedra del End</h3><p>Cubre el suelo de la dimensión final, hogar del Ender Dragon.</p>
+      <div class="tag-row"><span class="mini-tag">Pico de piedra+</span><span class="mini-tag">The End</span></div></div>
+  </div>
+</section>
+
+<!-- HERRAMIENTAS elementos colocados en fila con Flexbox -->
+<section id="progresion">
+  <div class="section-head">
+    <span class="css-tag">display: flex</span>
+    <h2 class="section-title">Progresión de herramientas</h2>
+    <p class="section-intro">El orden clásico para mejorar tu equipo.</p>
+  </div>
+  <div class="progress-row">
+    <div class="tier"><div class="tier-icon mc-slot">🪵</div><div class="tier-label">Madera</div></div>
+    <div class="progress-arrow">→</div>
+    <div class="tier"><div class="tier-icon mc-slot">🪨</div><div class="tier-label">Piedra</div></div>
+    <div class="progress-arrow">→</div>
+    <div class="tier"><div class="tier-icon mc-slot">⚙️</div><div class="tier-label">Hierro</div></div>
+    <div class="progress-arrow">→</div>
+    <div class="tier"><div class="tier-icon mc-slot">💎</div><div class="tier-label">Diamante</div></div>
+    <div class="progress-arrow">→</div>
+    <div class="tier"><div class="tier-icon mc-slot">🟣</div><div class="tier-label">Netherite</div></div>
+  </div>
+</section>
+
+<!-- MOBS tarjetas acomodadas en varias filas con Flexbox -->
+<section id="mobs">
+  <div class="section-head">
+    <span class="css-tag">display: flex / flex-wrap</span>
+    <h2 class="section-title">Mobs del juego</h2>
+    <p class="section-intro">Criaturas que aparecen según el bioma y la hora del día.</p>
+  </div>
+  <div class="mobs-row">
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🟩</div><h3>Creeper</h3></div>
+      <p>Explota al acercarse; silencioso y letal, no ataca cuerpo a cuerpo.</p>
+      <div class="mob-stats"><span class="hp">❤️ 20 HP</span><span class="biome">Overworld</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🧟</div><h3>Zombie</h3></div>
+      <p>Sale de noche; ataca cuerpo a cuerpo y arde con el sol.</p>
+      <div class="mob-stats"><span class="hp">❤️ 20 HP</span><span class="biome">Overworld</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">💀</div><h3>Esqueleto</h3></div>
+      <p>Ataca a distancia con arco y flechas; huye si te acercas.</p>
+      <div class="mob-stats"><span class="hp">❤️ 20 HP</span><span class="biome">Cuevas</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🐷</div><h3>Piglin</h3></div>
+      <p>Habitante del Nether; comercia oro y ataca con ballestas.</p>
+      <div class="mob-stats"><span class="hp">❤️ 16 HP</span><span class="biome">Nether</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🟪</div><h3>Enderman</h3></div>
+      <p>Se teletransporta; se enoja si lo miras a los ojos.</p>
+      <div class="mob-stats"><span class="hp">❤️ 40 HP</span><span class="biome">The End</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🧑‍🌾</div><h3>Aldeano</h3></div>
+      <p>Comercia objetos a cambio de esmeraldas; vive en aldeas.</p>
+      <div class="mob-stats"><span class="hp">❤️ 20 HP</span><span class="biome">Aldeas</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🐉</div><h3>Ender Dragon</h3></div>
+      <p>Jefe final del End; derrotarlo muestra los créditos del juego.</p>
+      <div class="mob-stats"><span class="hp">❤️ 200 HP</span><span class="biome">The End</span></div>
+    </div>
+    <div class="mc-card mob-card">
+      <div class="mob-top"><div class="block-icon">🐺</div><h3>Lobo</h3></div>
+      <p>Se puede domesticar con huesos; se convierte en perro aliado.</p>
+      <div class="mob-stats"><span class="hp">❤️ 8 HP</span><span class="biome">Bosques</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CRAFTEO: cuadrícula para mostrar una receta -->
+<section id="crafteo">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns / rows</span>
+    <h2 class="section-title">Guía de crafteo: pico de diamante</h2>
+    <p class="section-intro">Receta real: 3 diamantes arriba + 2 palos en el centro.</p>
+  </div>
+  <div class="craft-layout">
+    <div class="crafting-table mc-panel">
+      <div class="craft-slot mc-slot">💎</div>
+      <div class="craft-slot mc-slot">💎</div>
+      <div class="craft-slot mc-slot">💎</div>
+      <div class="craft-slot mc-slot"></div>
+      <div class="craft-slot mc-slot">🥢</div>
+      <div class="craft-slot mc-slot"></div>
+      <div class="craft-slot mc-slot"></div>
+      <div class="craft-slot mc-slot">🥢</div>
+      <div class="craft-slot mc-slot"></div>
+    </div>
+    <div class="craft-arrow">➡️</div>
+    <div class="craft-result mc-panel">⛏️</div>
+  </div>
+</section>
+
+<!-- cuatro tarjetas organizadas en dos columnas -->
+<section id="consejos">
+  <div class="section-head">
+    <span class="css-tag">grid-template-columns: repeat(2, 1fr)</span>
+    <h2 class="section-title">Consejos para sobrevivir la primera noche</h2>
+    <p class="section-intro">Lo básico antes de que caiga el sol.</p>
+  </div>
+  <div class="tips-grid">
+    <div class="mc-card tip-card"><div class="block-icon">🪵</div><div><strong>Consigue madera</strong><p>Golpea árboles para tener tablas, palos y tu primera mesa de crafteo.</p></div></div>
+    <div class="mc-card tip-card"><div class="block-icon">🏠</div><div><strong>Construye un refugio</strong><p>Un hueco tapado con bloques basta para sobrevivir a los mobs nocturnos.</p></div></div>
+    <div class="mc-card tip-card"><div class="block-icon">🔥</div><div><strong>Crea antorchas</strong><p>Carbón + palo = luz que evita que los mobs aparezcan cerca de ti.</p></div></div>
+    <div class="mc-card tip-card"><div class="block-icon">🍞</div><div><strong>Consigue comida</strong><p>Cultiva trigo o caza animales para no perder puntos de hambre.</p></div></div>
+  </div>
+</section>
+
+<!-- CAPAS DEL MUNDO ejemplo visual del Box Model  -->
+<section id="capas" class="layers-wrap">
+  <span class="css-tag">margin · border · padding · content</span>
+  <h2 class="section-title">Capas del mundo (Box Model)</h2>
+  <p class="section-intro">De afuera hacia adentro, igual que el modelo de caja de CSS: lecho de roca, piedra, tierra y superficie.</p>
+  <div class="bm-outer">
+    <span class="bm-label">margin: lecho de roca</span>
+    <div class="bm-bedrock">
+      <div class="bm-stone">
+        <div class="bm-dirt">
+          <div class="bm-grass">SUPERFICIE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+  Guía visual de referencia — HTML + CSS Grid + Flexbox + Box Model
+</footer>
+
+</body>
+</html>
+
