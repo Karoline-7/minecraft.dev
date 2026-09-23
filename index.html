@@ -3,23 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Minecraft</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+<!-- Bootstrap para los carruseles -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER barra de navegación usando Flexbox -->
+<!-- Navbar -->
 <header>
-  <div class="logo">MINECRAFT.GUIA</div>
+
+  <div class="logo">MINECRAFT</div>
 
   <nav>
-    <a href="#inicio" class="nav-item">
-      <img src="imagenes/minecraft.svg" class="icon" alt="Sobre Minecraft">
-      Sobre Minecraft
+
+    <a href="#inicio-guia" class="nav-item">
+      <img src="imagenes/Datos.svg" class="icon" alt="Inicio">
+      Inicio
     </a>
 
     <a href="#datos" class="nav-item">
@@ -42,6 +49,11 @@
       Bloques
     </a>
 
+    <a href="#galeria" class="nav-item">
+      <img src="imagenes/Galeria.svg" class="icon" alt="Galería">
+      Galería
+    </a>
+
     <a href="#mobs" class="nav-item">
       <img src="imagenes/Mobs.svg" class="icon" alt="Mobs">
       Mobs
@@ -56,193 +68,294 @@
       <img src="imagenes/End.svg" class="icon" alt="El End">
       El End
     </a>
+
   </nav>
+
 </header>
 
 
-<!-- HERO BANNER -->
+<!-- Carrusel principal -->
+
+<div id="carruselInicio"
+     class="carousel slide mc-carousel-top"
+     data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+
+    <button type="button"
+            data-bs-target="#carruselInicio"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Imagen 1">
+    </button>
+
+    <button type="button"
+            data-bs-target="#carruselInicio"
+            data-bs-slide-to="1"
+            aria-label="Imagen 2">
+    </button>
+
+    <button type="button"
+            data-bs-target="#carruselInicio"
+            data-bs-slide-to="2"
+            aria-label="Imagen 3">
+    </button>
+
+  </div>
+
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="imagenes/minecraft1.jpg"
+           class="d-block w-100"
+           alt="Minecraft imagen 1">
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagenes/minecraft2.avif"
+           class="d-block w-100"
+           alt="Minecraft imagen 2">
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagenes/minecraft3.jpg"
+           class="d-block w-100"
+           alt="Minecraft imagen 3">
+    </div>
+
+  </div>
+
+
+  <button class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carruselInicio"
+          data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Anterior</span>
+
+  </button>
+
+
+  <button class="carousel-control-next"
+          type="button"
+          data-bs-target="#carruselInicio"
+          data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Siguiente</span>
+
+  </button>
+
+</div>
+
+
+<!-- Guía para principiantes -->
+
+<section id="inicio-guia">
+
+  <div class="section-head">
+
+    <span class="css-tag">
+      guía para principiantes
+    </span>
+
+    <h2 class="section-title">
+      ¿Nunca has jugado Minecraft?
+    </h2>
+
+    <p class="section-intro">
+      No te preocupes. Aquí tienes lo básico para entender el juego antes de empezar.
+    </p>
+
+  </div>
+
+
+  <div class="beginner-grid">
+
+    <div class="mc-card beginner-card">
+
+      <div class="beginner-icon">🌍</div>
+
+      <h3>¿Qué es Minecraft?</h3>
+
+      <p>
+        Minecraft es un juego donde puedes explorar un mundo formado por bloques.
+        Puedes construir casas, conseguir recursos, fabricar objetos y enfrentarte
+        a diferentes criaturas.
+      </p>
+
+    </div>
+
+
+    <div class="mc-card beginner-card">
+
+      <div class="beginner-icon">⛏️</div>
+
+      <h3>¿Qué hago primero?</h3>
+
+      <p>
+        Al comenzar consigue madera, crea herramientas, consigue comida y construye
+        un refugio antes de que llegue la noche.
+      </p>
+
+    </div>
+
+
+    <div class="mc-card beginner-card">
+
+      <div class="beginner-icon">🌙</div>
+
+      <h3>¿Por qué importa la noche?</h3>
+
+      <p>
+        Durante la noche aparecen muchos mobs hostiles. Si estás empezando,
+        lo mejor es tener un lugar seguro y algunas antorchas.
+      </p>
+
+    </div>
+
+
+    <div class="mc-card beginner-card">
+
+      <div class="beginner-icon">🧱</div>
+
+      <h3>¿Qué son los bloques?</h3>
+
+      <p>
+        Son los elementos básicos del mundo. Puedes romperlos, recogerlos y
+        utilizarlos para construir o fabricar otros objetos.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="start-guide mc-panel">
+
+    <h3>🎮 Tu primera partida</h3>
+
+    <div class="start-steps">
+
+      <div class="start-step">
+
+        <span>1</span>
+
+        <strong>Busca árboles</strong>
+
+        <p>
+          Consigue madera para fabricar tus primeras herramientas.
+        </p>
+
+      </div>
+
+
+      <div class="start-step">
+
+        <span>2</span>
+
+        <strong>Crea herramientas</strong>
+
+        <p>
+          Haz una mesa de crafteo, un pico, un hacha y una espada.
+        </p>
+
+      </div>
+
+
+      <div class="start-step">
+
+        <span>3</span>
+
+        <strong>Consigue comida</strong>
+
+        <p>
+          Necesitarás comida para mantener tu nivel de hambre.
+        </p>
+
+      </div>
+
+
+      <div class="start-step">
+
+        <span>4</span>
+
+        <strong>Construye un refugio</strong>
+
+        <p>
+          Haz un lugar seguro antes de que llegue la noche.
+        </p>
+
+      </div>
+
+
+      <div class="start-step">
+
+        <span>5</span>
+
+        <strong>Explora</strong>
+
+        <p>
+          Cuando tengas recursos puedes comenzar a explorar.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Hero -->
+
 <div class="hero">
 
-  <img
-    src="imagenes/Minecraft.webp"
-    alt="Mundo de Minecraft"
-    class="hero-banner"
-  >
+  <div class="hero-inner">
 
-  <div class="hero-copy">
-    <span class="css-tag">minecraft.dev</span>
+    <div class="hero-copy">
 
-    <h1>
-      Minecraft: un mundo hecho de <span>bloques</span>
-    </h1>
+      <span class="css-tag">
+        display: grid
+      </span>
 
-    <p>
-      Sandbox de construcción y supervivencia donde cada elemento del entorno
-      es un cubo que puedes romper, combinar y colocar. Esta guía resume sus
-      piezas clave.
-    </p>
+      <h1>
+        Minecraft: un mundo hecho de
+        <span>bloques</span>
+      </h1>
+
+      <p>
+        Sandbox de construcción y supervivencia donde cada elemento del entorno
+        es un cubo que puedes romper, combinar y colocar.
+      </p>
+
+    </div>
+
+
+    <div class="end-crystal"
+         role="img"
+         aria-label="Cristal del End">
+      🔮
+    </div>
+
   </div>
 
 </div>
 
 
-<!-- INICIO -->
-<section id="inicio">
+<!-- Mobs icónicos -->
 
-  <div class="section-head">
-    <span class="css-tag">inicio</span>
-
-    <h2 class="section-title">
-      ¿Qué es Minecraft?
-    </h2>
-
-    <p class="section-intro">
-      Minecraft es un videojuego de construcción, exploración y supervivencia
-      en un mundo formado completamente por bloques.
-    </p>
-  </div>
-
-  <div class="intro-card mc-card">
-
-    <div class="block-icon">⛏️</div>
-
-    <div>
-
-      <h3>Un mundo para explorar y crear</h3>
-
-      <p>
-        En Minecraft puedes explorar diferentes lugares, recolectar recursos,
-        construir casas y estructuras, fabricar herramientas y enfrentarte
-        a diferentes criaturas.
-      </p>
-
-      <p>
-        El juego no te obliga a seguir un único camino. Puedes dedicarte a
-        construir, explorar, luchar, conseguir recursos o simplemente crear
-        tu propio mundo.
-      </p>
-
-      <p>
-        Esta guía está pensada para quienes están comenzando y quieren
-        conocer los elementos principales del juego, como sus dimensiones,
-        biomas, bloques, criaturas y formas de crear objetos.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- COMO SE JUEGA -->
-<section id="sobre-minecraft">
-
-  <div class="section-head">
-
-    <span class="css-tag">display: grid</span>
-
-    <h2 class="section-title">
-      🎮 ¿Cómo se juega?
-    </h2>
-
-    <p class="section-intro">
-      Minecraft te permite explorar, construir, conseguir recursos y sobrevivir
-      en un mundo lleno de posibilidades.
-    </p>
-
-  </div>
-
-
-  <div class="game-grid">
-
-    <div class="mc-card game-card">
-
-      <div class="block-icon">🎮</div>
-
-      <h3>Los modos de juego</h3>
-
-      <p>
-        Minecraft tiene diferentes modos. En
-        <strong>Supervivencia</strong>
-        debes conseguir recursos, construir y protegerte.
-        En <strong>Creativo</strong> tienes recursos ilimitados para construir
-        libremente.
-      </p>
-
-    </div>
-
-
-    <div class="mc-card game-card">
-
-      <div class="block-icon">❤️</div>
-
-      <h3>Vida, hambre y experiencia</h3>
-
-      <p>
-        En Supervivencia debes cuidar tu <strong>vida</strong> y mantener tu
-        <strong>hambre</strong>. También puedes conseguir experiencia realizando
-        diferentes actividades, que sirve para encantar y mejorar objetos.
-      </p>
-
-    </div>
-
-
-    <div class="mc-card game-card">
-
-      <div class="block-icon">🌞</div>
-
-      <h3>Día y noche</h3>
-
-      <p>
-        El mundo cambia entre el día y la noche. Durante la noche aparecen
-        criaturas hostiles, por lo que es importante tener un refugio y
-        suficiente iluminación para protegerte.
-      </p>
-
-    </div>
-
-
-    <div class="mc-card game-card">
-
-      <div class="block-icon">🎒</div>
-
-      <h3>Inventario</h3>
-
-      <p>
-        El inventario es donde guardas tus objetos. Puedes almacenar bloques,
-        herramientas, alimentos, minerales y otros recursos que encuentres
-        durante tu aventura.
-      </p>
-
-    </div>
-
-
-    <div class="mc-card game-card">
-
-      <div class="block-icon">⛏️</div>
-
-      <h3>¿Qué hago cuando comienzo?</h3>
-
-      <p>
-        Lo primero es conseguir <strong>madera</strong>, crear herramientas
-        básicas y conseguir comida. Después puedes construir un refugio,
-        conseguir mejores recursos y comenzar a explorar el mundo.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- MOBS ICÓNICOS -->
 <section id="iconos">
 
   <div class="section-head">
 
-    <span class="css-tag">display: grid (pixel art)</span>
+    <span class="css-tag">
+      display: grid (pixel art)
+    </span>
 
     <h2 class="section-title">
       Mobs icónicos
@@ -259,11 +372,7 @@
 
     <div class="icon-block">
 
-      <div
-        class="pixel-art mc-panel"
-        role="img"
-        aria-label="Rostro de Creeper hecho con CSS Grid"
-      >
+      <div class="pixel-art mc-panel">
 
         <div class="px-creeper-a"></div>
         <div class="px-creeper-a"></div>
@@ -342,7 +451,7 @@
       <h3>Creeper</h3>
 
       <p>
-        Explota al acercarse; el mob más temido del Overworld.
+        Explota al acercarse.
       </p>
 
     </div>
@@ -350,11 +459,7 @@
 
     <div class="icon-block">
 
-      <div
-        class="pixel-art mc-panel"
-        role="img"
-        aria-label="Rostro de Enderman hecho con CSS Grid"
-      >
+      <div class="pixel-art mc-panel">
 
         <div class="px-ender-a"></div>
         <div class="px-ender-a"></div>
@@ -433,7 +538,7 @@
       <h3>Enderman</h3>
 
       <p>
-        Ojos morados brillantes; se enoja si lo miras directamente.
+        Se teletransporta y tiene ojos morados.
       </p>
 
     </div>
@@ -443,7 +548,8 @@
 </section>
 
 
-<!-- DATOS RÁPIDOS -->
+<!-- Datos rápidos -->
+
 <section id="datos">
 
   <div class="section-head">
@@ -457,7 +563,7 @@
     </h2>
 
     <p class="section-intro">
-      Cifras clave del juego.
+      Algunas cifras del juego.
     </p>
 
   </div>
@@ -468,7 +574,7 @@
     <div class="stat">
       <div class="num">3</div>
       <div class="label">
-        Dimensiones: Overworld, Nether, End
+        Dimensiones
       </div>
     </div>
 
@@ -482,7 +588,7 @@
     <div class="stat">
       <div class="num">320</div>
       <div class="label">
-        Altura del mundo (bloques)
+        Altura máxima del mundo
       </div>
     </div>
 
@@ -498,7 +604,8 @@
 </section>
 
 
-<!-- DIMENSIONES -->
+<!-- Dimensiones -->
+
 <section id="dimensiones">
 
   <div class="section-head">
@@ -512,7 +619,7 @@
     </h2>
 
     <p class="section-intro">
-      Cada una con su propia física, mobs y recursos.
+      Cada una tiene sus propios lugares, criaturas y recursos.
     </p>
 
   </div>
@@ -527,8 +634,8 @@
       <h3>Overworld</h3>
 
       <p>
-        El mundo principal: bosques, montañas, océanos y aldeas.
-        Punto de partida de toda partida.
+        Es el mundo principal. Aquí encuentras bosques, montañas,
+        océanos, cuevas y aldeas.
       </p>
 
     </div>
@@ -541,8 +648,8 @@
       <h3>Nether</h3>
 
       <p>
-        Dimensión infernal de lava y netherrack; se accede con un
-        portal de obsidiana. Hogar de blazes y piglins.
+        Dimensión llena de lava y peligros. Se accede mediante
+        un portal construido con obsidiana.
       </p>
 
     </div>
@@ -555,8 +662,8 @@
       <h3>The End</h3>
 
       <p>
-        Islas flotantes de piedra del End; aquí vive el Ender Dragon,
-        el jefe final del juego.
+        Es una dimensión formada por islas donde se encuentra
+        el Ender Dragon.
       </p>
 
     </div>
@@ -566,7 +673,8 @@
 </section>
 
 
-<!-- BIOMAS OVERWORLD -->
+<!-- Biomas Overworld -->
+
 <section id="biomas">
 
   <div class="section-head">
@@ -580,7 +688,7 @@
     </h2>
 
     <p class="section-intro">
-      El paisaje cambia por completo según la zona.
+      El paisaje cambia según la zona.
     </p>
 
   </div>
@@ -597,37 +705,37 @@
     <div class="mc-card biome-card">
       <div class="block-icon">🏜️</div>
       <h3>Desierto</h3>
-      <p>Arena, cactus y templos ocultos.</p>
+      <p>Arena, cactus y templos.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">❄️</div>
       <h3>Tundra nevada</h3>
-      <p>Nieve, hielo y aldeanos abrigados.</p>
+      <p>Nieve y hielo.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🌊</div>
       <h3>Océano</h3>
-      <p>Corales, naufragios y templos submarinos.</p>
+      <p>Corales, naufragios y templos.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🌴</div>
       <h3>Selva</h3>
-      <p>Árboles enormes, lianas y templos escondidos.</p>
+      <p>Árboles enormes y lianas.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🌳</div>
       <h3>Sabana</h3>
-      <p>Pasto seco, acacias y aldeas propias.</p>
+      <p>Acacias, pasto seco y aldeas.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🐸</div>
       <h3>Pantano</h3>
-      <p>Agua turbia, árboles de sauce y cabañas de brujas.</p>
+      <p>Agua, árboles y ranas.</p>
     </div>
 
   </div>
@@ -635,7 +743,8 @@
 </section>
 
 
-<!-- BIOMAS NETHER -->
+<!-- Biomas Nether -->
+
 <section id="biomas-nether">
 
   <div class="section-head">
@@ -649,7 +758,7 @@
     </h2>
 
     <p class="section-intro">
-      Paisajes infernales, cada uno con su propio peligro.
+      Paisajes peligrosos llenos de lava.
     </p>
 
   </div>
@@ -660,33 +769,31 @@
     <div class="mc-card biome-card">
       <div class="block-icon">🟥</div>
       <h3>Tierras del Nether</h3>
-      <p>Netherrack rojizo, lava y ghasts flotando.</p>
+      <p>Netherrack, lava y ghasts.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🍄</div>
       <h3>Bosque carmesí</h3>
-      <p>Hongos gigantes rojos; hogar de piglins.</p>
+      <p>Vegetación roja y piglins.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🟦</div>
       <h3>Bosque distorsionado</h3>
-      <p>Vegetación azul-cian; libre de piglins hostiles.</p>
+      <p>Vegetación azul y cian.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">⬛</div>
       <h3>Deltas de basalto</h3>
-      <p>Columnas de basalto entre géiseres de lava.</p>
+      <p>Basalto y lava.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">💀</div>
       <h3>Valle de arena de almas</h3>
-      <p>
-        Arena de almas gris; aparecen esqueletos y skeletons ardientes.
-      </p>
+      <p>Arena de almas y esqueletos.</p>
     </div>
 
   </div>
@@ -694,7 +801,8 @@
 </section>
 
 
-<!-- THE END -->
+<!-- Zonas del End -->
+
 <section id="biomas-end">
 
   <div class="section-head">
@@ -708,7 +816,7 @@
     </h2>
 
     <p class="section-intro">
-      Regiones de la dimensión final, más allá de la isla central.
+      Regiones de la dimensión final.
     </p>
 
   </div>
@@ -719,33 +827,25 @@
     <div class="mc-card biome-card">
       <div class="block-icon">🐉</div>
       <h3>Isla central</h3>
-      <p>
-        Aquí aparece el Ender Dragon sobre pilares de cristal.
-      </p>
+      <p>Aquí aparece el Ender Dragon.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🏝️</div>
       <h3>Islas exteriores</h3>
-      <p>
-        Fragmentos pequeños de piedra del End flotando en el vacío.
-      </p>
+      <p>Islas flotantes del End.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">⛰️</div>
-      <h3>Tierras altas del End</h3>
-      <p>
-        Terreno elevado con chorus y ciudades del End.
-      </p>
+      <h3>Tierras altas</h3>
+      <p>Zona elevada con ciudades del End.</p>
     </div>
 
     <div class="mc-card biome-card">
       <div class="block-icon">🟪</div>
       <h3>Páramos del End</h3>
-      <p>
-        Zona plana y vacía, casi sin vegetación.
-      </p>
+      <p>Zonas planas y vacías.</p>
     </div>
 
   </div>
@@ -753,7 +853,134 @@
 </section>
 
 
-<!-- BLOQUES -->
+<!-- Galería -->
+
+<section id="galeria">
+
+  <div class="section-head">
+
+    <span class="css-tag">
+      Bootstrap JS: carousel
+    </span>
+
+    <h2 class="section-title">
+      Galería de dimensiones
+    </h2>
+
+    <p class="section-intro">
+      Un vistazo rápido a los mundos del juego.
+    </p>
+
+  </div>
+
+
+  <div id="carruselDimensiones"
+       class="carousel slide mc-carousel"
+       data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+      <button type="button"
+              data-bs-target="#carruselDimensiones"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true">
+      </button>
+
+      <button type="button"
+              data-bs-target="#carruselDimensiones"
+              data-bs-slide-to="1">
+      </button>
+
+      <button type="button"
+              data-bs-target="#carruselDimensiones"
+              data-bs-slide-to="2">
+      </button>
+
+    </div>
+
+
+    <div class="carousel-inner mc-panel">
+
+      <div class="carousel-item active">
+
+        <div class="carousel-slide-content">
+
+          <div class="carousel-icon">🌳</div>
+
+          <h3>Overworld</h3>
+
+          <p>
+            Bosques, océanos, desiertos, aldeas y cuevas.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="carousel-item">
+
+        <div class="carousel-slide-content">
+
+          <div class="carousel-icon">🔥</div>
+
+          <h3>Nether</h3>
+
+          <p>
+            Una dimensión peligrosa llena de lava.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="carousel-item">
+
+        <div class="carousel-slide-content">
+
+          <div class="carousel-icon">🟪</div>
+
+          <h3>The End</h3>
+
+          <p>
+            Hogar del Ender Dragon.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselDimensiones"
+            data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselDimensiones"
+            data-bs-slide="next">
+
+      <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- Bloques -->
+
 <section id="bloques">
 
   <div class="section-head">
@@ -767,7 +994,7 @@
     </h2>
 
     <p class="section-intro">
-      Los materiales que más se recolectan durante una partida.
+      Algunos materiales importantes durante una partida.
     </p>
 
   </div>
@@ -776,73 +1003,68 @@
   <div class="blocks-grid">
 
     <div class="mc-card">
-
       <div class="block-icon">🌱</div>
-
       <h3>Pasto</h3>
-
-      <p>
-        Bloque de superficie; debajo siempre hay tierra.
-      </p>
-
+      <p>Bloque de superficie del Overworld.</p>
       <div class="tag-row">
-        <span class="mini-tag">Cualquier herramienta</span>
         <span class="mini-tag">Overworld</span>
       </div>
-
     </div>
 
 
     <div class="mc-card">
-
       <div class="block-icon">🪨</div>
-
       <h3>Piedra</h3>
-
-      <p>
-        El bloque más común bajo tierra; base para herramientas.
-      </p>
-
+      <p>Uno de los bloques más comunes.</p>
       <div class="tag-row">
-        <span class="mini-tag">Pico de madera+</span>
         <span class="mini-tag">Subsuelo</span>
       </div>
-
     </div>
 
 
     <div class="mc-card">
-
       <div class="block-icon">🪵</div>
-
       <h3>Madera</h3>
-
-      <p>
-        Se obtiene de árboles; primer recurso de cualquier partida.
-      </p>
-
+      <p>Uno de los primeros recursos que necesitas.</p>
       <div class="tag-row">
-        <span class="mini-tag">Sin herramienta</span>
         <span class="mini-tag">Bosques</span>
       </div>
-
     </div>
 
 
-    <div class="mc-card">
+    <!-- Calculadora de diamantes -->
+
+    <div class="mc-card" id="cardDiamante">
 
       <div class="block-icon">💎</div>
 
       <h3>Diamante</h3>
 
       <p>
-        Mineral raro y profundo; da las mejores herramientas.
+        Mineral utilizado para fabricar herramientas,
+        armas y armaduras.
       </p>
 
-      <div class="tag-row">
-        <span class="mini-tag">Pico de hierro+</span>
-        <span class="mini-tag">Y -58 aprox.</span>
+
+      <div class="diamond-calculator">
+
+        <input
+          type="number"
+          id="cantidadDiamantes"
+          min="0"
+          placeholder="Cantidad"
+        >
+
+        <button id="calcularDiamantes">
+          ⛏️ Calcular
+        </button>
+
       </div>
+
+
+      <p id="textoDiamante">
+        Escribe una cantidad para calcular tus picos.
+      </p>
 
     </div>
 
@@ -854,11 +1076,10 @@
       <h3>Obsidiana</h3>
 
       <p>
-        Se forma al mezclar agua y lava; es la puerta al Nether.
+        Se utiliza principalmente para construir portales.
       </p>
 
       <div class="tag-row">
-        <span class="mini-tag">Pico de diamante</span>
         <span class="mini-tag">Portal</span>
       </div>
 
@@ -872,11 +1093,10 @@
       <h3>Piedra del End</h3>
 
       <p>
-        Cubre el suelo de la dimensión final, hogar del Ender Dragon.
+        Bloque característico de The End.
       </p>
 
       <div class="tag-row">
-        <span class="mini-tag">Pico de piedra+</span>
         <span class="mini-tag">The End</span>
       </div>
 
@@ -887,7 +1107,8 @@
 </section>
 
 
-<!-- PROGRESIÓN -->
+<!-- Progresión -->
+
 <section id="progresion">
 
   <div class="section-head">
@@ -901,7 +1122,7 @@
     </h2>
 
     <p class="section-intro">
-      El orden clásico para mejorar tu equipo.
+      Una progresión básica de materiales.
     </p>
 
   </div>
@@ -946,14 +1167,14 @@
 
 </section>
 
+<!-- Mobs interactivos -->
 
-<!-- MOBS -->
 <section id="mobs">
 
   <div class="section-head">
 
     <span class="css-tag">
-      display: flex / flex-wrap
+      JavaScript / for / filtros
     </span>
 
     <h2 class="section-title">
@@ -961,171 +1182,141 @@
     </h2>
 
     <p class="section-intro">
-      Criaturas que aparecen según el bioma y la hora del día.
+      Filtra los mobs según el lugar donde aparecen o deja que el juego elija uno al azar.
     </p>
 
   </div>
 
 
-  <div class="mobs-row">
+  <!-- Filtro y botón aleatorio -->
 
-    <div class="mc-card mob-card">
+  <div class="mob-tools">
 
-      <div class="mob-top">
-        <div class="block-icon">🟩</div>
-        <h3>Creeper</h3>
-      </div>
+    <select id="filtroBioma">
 
-      <p>
-        Explota al acercarse; silencioso y letal, no ataca cuerpo a cuerpo.
-      </p>
+      <option value="todos">
+        Todos los lugares
+      </option>
 
-      <div class="mob-stats">
-        <span class="hp">❤️ 20 HP</span>
-        <span class="biome">Overworld</span>
-      </div>
+      <option value="Overworld">
+        Overworld
+      </option>
 
-    </div>
+      <option value="Nether">
+        Nether
+      </option>
 
+      <option value="The End">
+        The End
+      </option>
 
-    <div class="mc-card mob-card">
+      <option value="Cuevas">
+        Cuevas
+      </option>
 
-      <div class="mob-top">
-        <div class="block-icon">🧟</div>
-        <h3>Zombie</h3>
-      </div>
+      <option value="Aldeas">
+        Aldeas
+      </option>
 
-      <p>
-        Sale de noche; ataca cuerpo a cuerpo y arde con el sol.
-      </p>
+      <option value="Bosques">
+        Bosques
+      </option>
 
-      <div class="mob-stats">
-        <span class="hp">❤️ 20 HP</span>
-        <span class="biome">Overworld</span>
-      </div>
-
-    </div>
+    </select>
 
 
-    <div class="mc-card mob-card">
+    <button id="mobAleatorio">
+      🎲 Mob aleatorio
+    </button>
 
-      <div class="mob-top">
-        <div class="block-icon">💀</div>
-        <h3>Esqueleto</h3>
-      </div>
-
-      <p>
-        Ataca a distancia con arco y flechas; huye si te acercas.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 20 HP</span>
-        <span class="biome">Cuevas</span>
-      </div>
-
-    </div>
+  </div>
 
 
-    <div class="mc-card mob-card">
+  <!-- aquí aparece el mob aleatorio -->
 
-      <div class="mob-top">
-        <div class="block-icon">🐷</div>
-        <h3>Piglin</h3>
-      </div>
-
-      <p>
-        Habitante del Nether; comercia oro y ataca con ballestas.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 16 HP</span>
-        <span class="biome">Nether</span>
-      </div>
-
-    </div>
+  <div id="resultadoAleatorio"
+       class="random-result">
+  </div>
 
 
-    <div class="mc-card mob-card">
+  <!-- JavaScript crea las tarjetas aquí -->
 
-      <div class="mob-top">
-        <div class="block-icon">🟪</div>
-        <h3>Enderman</h3>
-      </div>
-
-      <p>
-        Se teletransporta; se enoja si lo miras a los ojos.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 40 HP</span>
-        <span class="biome">The End</span>
-      </div>
-
-    </div>
-
-
-    <div class="mc-card mob-card">
-
-      <div class="mob-top">
-        <div class="block-icon">🧑‍🌾</div>
-        <h3>Aldeano</h3>
-      </div>
-
-      <p>
-        Comercia objetos a cambio de esmeraldas; vive en aldeas.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 20 HP</span>
-        <span class="biome">Aldeas</span>
-      </div>
-
-    </div>
-
-
-    <div class="mc-card mob-card">
-
-      <div class="mob-top">
-        <div class="block-icon">🐉</div>
-        <h3>Ender Dragon</h3>
-      </div>
-
-      <p>
-        Jefe final del End; derrotarlo muestra los créditos del juego.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 200 HP</span>
-        <span class="biome">The End</span>
-      </div>
-
-    </div>
-
-
-    <div class="mc-card mob-card">
-
-      <div class="mob-top">
-        <div class="block-icon">🐺</div>
-        <h3>Lobo</h3>
-      </div>
-
-      <p>
-        Se puede domesticar con huesos; se convierte en perro aliado.
-      </p>
-
-      <div class="mob-stats">
-        <span class="hp">❤️ 8 HP</span>
-        <span class="biome">Bosques</span>
-      </div>
-
-    </div>
-
+  <div class="mobs-row"
+       id="mobsRow">
   </div>
 
 </section>
 
 
-<!-- CRAFTEO -->
+
+
+  <!-- Buscador y filtros -->
+
+  <div class="mob-tools">
+
+    <input
+      type="text"
+      id="buscadorMob"
+      placeholder="🔎 Buscar mob..."
+    >
+
+
+    <select id="filtroBioma">
+
+      <option value="todos">
+        Todos los lugares
+      </option>
+
+      <option value="Overworld">
+        Overworld
+      </option>
+
+      <option value="Nether">
+        Nether
+      </option>
+
+      <option value="The End">
+        The End
+      </option>
+
+      <option value="Cuevas">
+        Cuevas
+      </option>
+
+      <option value="Aldeas">
+        Aldeas
+      </option>
+
+      <option value="Bosques">
+        Bosques
+      </option>
+
+    </select>
+
+
+    <button id="mobAleatorio">
+      🎲 Mob aleatorio
+    </button>
+
+  </div>
+
+
+  <div id="resultadoAleatorio"
+       class="random-result">
+  </div>
+
+
+  <!-- Aquí JavaScript crea las tarjetas -->
+
+  <div class="mobs-row"
+       id="mobsRow">
+  </div>
+
+</section>
+
+
+<!-- Crafteo -->
+
 <section id="crafteo">
 
   <div class="section-head">
@@ -1139,7 +1330,7 @@
     </h2>
 
     <p class="section-intro">
-      Receta real: 3 diamantes arriba + 2 palos en el centro.
+      3 diamantes arriba + 2 palos en el centro.
     </p>
 
   </div>
@@ -1178,7 +1369,8 @@
 </section>
 
 
-<!-- CONSEJOS -->
+<!-- Consejos -->
+
 <section id="consejos">
 
   <div class="section-head">
@@ -1205,11 +1397,14 @@
       <div class="block-icon">🪵</div>
 
       <div>
+
         <strong>Consigue madera</strong>
 
         <p>
-          Golpea árboles para tener tablas, palos y tu primera mesa de crafteo.
+          Golpea árboles para conseguir madera,
+          tablas y palos.
         </p>
+
       </div>
 
     </div>
@@ -1220,11 +1415,14 @@
       <div class="block-icon">🏠</div>
 
       <div>
+
         <strong>Construye un refugio</strong>
 
         <p>
-          Un hueco tapado con bloques basta para sobrevivir a los mobs nocturnos.
+          Un pequeño refugio puede protegerte
+          durante la noche.
         </p>
+
       </div>
 
     </div>
@@ -1235,11 +1433,14 @@
       <div class="block-icon">🔥</div>
 
       <div>
+
         <strong>Crea antorchas</strong>
 
         <p>
-          Carbón + palo = luz que evita que los mobs aparezcan cerca de ti.
+          Las antorchas iluminan tu refugio
+          y tus zonas de exploración.
         </p>
+
       </div>
 
     </div>
@@ -1250,11 +1451,14 @@
       <div class="block-icon">🍞</div>
 
       <div>
+
         <strong>Consigue comida</strong>
 
         <p>
-          Cultiva trigo o caza animales para no perder puntos de hambre.
+          Necesitas comida para mantener
+          tu nivel de hambre.
         </p>
+
       </div>
 
     </div>
@@ -1264,20 +1468,17 @@
 </section>
 
 
-<!-- CAPAS DEL MUNDO -->
-<section id="capas" class="layers-wrap">
+<!-- Capas -->
 
-  <span class="css-tag">
-    margin · border · padding · content
-  </span>
+<section id="capas"
+         class="layers-wrap">
 
   <h2 class="section-title">
-    Capas del mundo (Box Model)
+    Capas del mundo
   </h2>
 
   <p class="section-intro">
-    De afuera hacia adentro, igual que el modelo de caja de CSS:
-    lecho de roca, piedra, tierra y superficie.
+    Una representación visual utilizando el Box Model de CSS.
   </p>
 
 
@@ -1308,10 +1509,26 @@
 </section>
 
 
-<!-- PIE DE PÁGINA -->
+<!-- Footer -->
+
 <footer>
-  Minecraft
+
+
+  <div id="estadoServidor"
+       class="server-status">
+    Conectando con el servidor...
+  </div>
+
 </footer>
+
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript propio -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
